@@ -1,0 +1,67 @@
+:root {
+  --blue: #61afef;
+  --yellow: #d19a66;
+  --pink: #c678dd;
+  --green: #98c379;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d8d5d5;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-pink {
+  background-color: var(--pink);
+}
+.code-l {
+  opacity: 0;
+  width: 60px;
+  height: 10px;
+  border-radius: 10px;
+}
+.code-m {
+  opacity: 0;
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+}
+.code-s {
+  opacity: 0;
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+}
+.code-row {
+  display: flex;
+  gap: 5px;
+  margin: 10px;
+}
+.animated {
+  animation: slideIn 0.5s var(--d) ease forwards;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
